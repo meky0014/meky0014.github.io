@@ -2,23 +2,23 @@ export const SITE_CONFIG = {
     title: "Galaxy",
     logoSrc: "/favicon.svg",
     description: "A curated space for digital galleries and storytelling.",
-    author: "DG",
-    signature: "DGX",
+    author: "Meky Kwak",
+    signature: "MK",
     site: "https://galaxy.ceda.is",
     imageServer: ["https://images.pexels.com"],
     postsPerPage: 6,
     projectsPerPage: 12,
     defaultImage: "/blog-placeholder-1.png",
     nav: [
-        { text: "Blog", href: "/blog" },
+        { text: "Projects", href: "/blog" },
         {
-            text: "Gallery",
+            text: "Image",
             href: "/gallery",
             children: [
                 { text: "2025", href: "/gallery/2025/shinjukugyoencherryblossoms" }
             ]
         },
-        { text: "Traces", href: "/traces" },
+        { text: "Cities", href: "/traces" },
     ],
     homepage: {
         harmonicSystem: {
@@ -26,37 +26,37 @@ export const SITE_CONFIG = {
             speed: 0.0042
         },
         links: [
-            { text: "Read the blog", href: "/blog" },
-            { text: "Explore the Traces", href: "/traces" }
+            { text: "Get to know meq", href: "/blog" },
+            { text: "Explore more about me", href: "/traces" }
         ]
     },
     footer: {
         social: [
-            { text: "Projects", href: "/projects" },
-            { text: "Elsewhere", href: "/elsewhere" }
+            { text: "Work Experience", href: "/projects" },
+            { text: "Social", href: "/elsewhere" }
         ],
-        copyright: "Growing Galaxy. Designed with intention."
+        copyright: "Meky Kwak."
     },
     elsewhere: [
-        {
+        {/*
             name: "X",
             handle: "@OwenCedaric",
             url: "https://x.com/OwenCedaric",
-        },
+        */},
         {
             name: "GitHub",
-            handle: "OwenCedaric",
-            url: "https://github.com/OwenCedaric",
+            handle: "Meky Kwak",
+            url: "https://github.com/meky0014",
         },
         {
             name: "Instagram",
-            handle: "@OwenCedaric",
-            url: "https://instagram.com/OwenCedaric",
+            handle: "@mekymarley",
+            url: "https://instagram.com/mekymarley",
         },
         {
             name: "Mail",
-            handle: "hello@ceda.is",
-            url: "mailto:hello@ceda.is",
+            handle: "kwakmeky@gmail.com",
+            url: "kwakmeky@gmail.com",
         }
     ],
     articleCopyright: {
