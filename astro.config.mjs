@@ -220,7 +220,7 @@ async function processSitemapFile(filePath, collection, defaultLastMod, latestBl
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://meky0014.github.io',
+    site: '[https://meky0014.github.io](https://meky0014.github.io)',
     markdown: {
         processor: unified({
             remarkPlugins: [remarkMath],
