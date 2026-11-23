@@ -15,6 +15,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeTracesBrutalism from './src/utils/rehype-traces-brutalism.ts';
 
+
 /**
  * @param {Date | string | number | undefined} date
  * @returns {string | undefined}
@@ -219,7 +220,8 @@ async function processSitemapFile(filePath, collection, defaultLastMod, latestBl
 
 // https://astro.build/config
 export default defineConfig({
-    site: SITE_CONFIG.site,
+    site: 'https://meky0014.github.io',
+    base: '/meky0014',
     markdown: {
         processor: unified({
             remarkPlugins: [remarkMath],
