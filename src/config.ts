@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
     title: "Galaxy",
     logoSrc: "/favicon.svg",
-    description: "A curated space for digital galleries and storytelling.",
+    description: "A student in Universitas Cenderawasih.",
     author: "Meky Kwak",
     signature: "MK",
     site: "https://galaxy.ceda.is",
