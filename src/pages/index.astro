@@ -57,7 +57,14 @@ import HarmonicSystemSVG from "@/components/ui/HarmonicSystemSVG.astro";
         animateOn="view"
       />
     </h1>
-
+    <!-- Description -->
+                <p
+                    class="animate-cascade-description text-sm text-gray-500 italic mt-6 md:mt-8"
+                >
+                    {
+                        aboutFrontmatter.description
+                    }
+                </p>
     <img
   src="/pasfoto.png"
   alt={SITE_CONFIG.author}
