@@ -43,30 +43,28 @@ import HarmonicSystemSVG from "@/components/ui/HarmonicSystemSVG.astro";
         >
             <!-- Header Area -->
             <div>
-                <h1
-                    class="animate-cascade-header font-serif text-5xl md:text-7xl font-normal leading-none tracking-tight text-black dark:text-white mb-2"
-                >
-                    <DecryptedText
-                        client:idle
-                        text={SITE_CONFIG.author}
-                        speed={40}
-                        maxIterations={20}
-                        sequential={true}
-                        revealDirection="start"
-                        animateOn="view"
-                    />
-                </h1>
+  <div class="flex items-center gap-4 md:gap-6">
+    <h1
+      class="animate-cascade-header font-serif text-5xl md:text-7xl font-normal leading-none tracking-tight"
+    >
+      <DecryptedText
+        client:idle
+        text={SITE_CONFIG.author}
+        speed={40}
+        maxIterations={20}
+        sequential={true}
+        revealDirection="start"
+        animateOn="view"
+      />
+    </h1>
 
-                <!-- Description -->
-                <p
-                    class="animate-cascade-description text-sm text-gray-500 italic mt-6 md:mt-8"
-                >
-                    {
-                        aboutFrontmatter.description
-                    }
-                </p>
-            </div>
-
+    <img
+      src="/pasfoto.png"
+      alt={SITE_CONFIG.author}
+      class="w-14 h-14 md:w-20 md:h-20 rounded-full object-cover shrink-0 border border-white/20"
+    />
+  </div>
+</div>
             <!-- About Section (LCP Element rendered smoothly) -->
             <div class="animate-cascade-prose">
                 <div
