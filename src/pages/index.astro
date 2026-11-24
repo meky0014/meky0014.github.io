@@ -42,10 +42,11 @@ import HarmonicSystemSVG from "@/components/ui/HarmonicSystemSVG.astro";
             class="max-w-2xl mx-auto md:mx-0 w-full"
         >
             <!-- Header Area -->
-            <div>
-  <div class="flex items-center gap-4 md:gap-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+  <!-- Kolom Kiri: Nama di atas, Description di bawah -->
+  <div class="min-w-0">
     <h1
-      class="animate-cascade-header font-serif text-5xl md:text-7xl font-normal leading-none tracking-tight"
+      class="animate-cascade-header font-serif text-5xl md:text-7xl font-normal leading-none tracking-tight whitespace-nowrap"
     >
       <DecryptedText
         client:idle
@@ -57,20 +58,21 @@ import HarmonicSystemSVG from "@/components/ui/HarmonicSystemSVG.astro";
         animateOn="view"
       />
     </h1>
+
     <!-- Description -->
-                <p
-                    class="animate-cascade-description text-sm text-gray-500 italic mt-6 md:mt-8"
-                >
-                    {
-                        aboutFrontmatter.description
-                    }
-                </p>
-    <img
-  src="/pasfoto.png"
-  alt={SITE_CONFIG.author}
-  class="w-[140px] h-[140px] md:w-[200px] md:h-[200px] ml-8 md:ml-16 rounded-full object-cover shrink-0 border border-white/20"
-/>
+    <div class="mt-3">
+      <p class="italic text-muted-foreground">
+        {SITE_CONFIG.description}
+      </p>
+    </div>
   </div>
+
+  <!-- Kolom Kanan: Foto Profil Circular 2.5x -->
+  <img
+    src="/profile.jpg"
+    alt={SITE_CONFIG.author}
+    class="w-[140px] h-[140px] md:w-[200px] md:h-[200px] rounded-full object-cover object-top shrink-0 border border-white/20"
+  />
 </div>
             <!-- About Section (LCP Element rendered smoothly) -->
             <div class="animate-cascade-prose">
