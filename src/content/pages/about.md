@@ -24,4 +24,4 @@ This site is built with:
 
 ## Contact
 
-If you‘d like to reach out, find me on [X](https://x.com/OwenCedaric) or [GitHub](https://github.com/meky0014).
+If you‘d like to reach out, find me on [GitHub](https://github.com/meky0014) [Contact](https://meky0014.github.io/elsewhere/).
