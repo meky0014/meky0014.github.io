@@ -18,7 +18,7 @@ export const SITE_CONFIG = {
                 { text: "2025", href: "/gallery/2025/shinjukugyoencherryblossoms" }
             ]
         },
-        { text: "Cities", href: "/traces" },
+        {/* text: "Cities", href: "/traces" */},
     ],
     homepage: {
         harmonicSystem: {
