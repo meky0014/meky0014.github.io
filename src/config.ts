@@ -61,6 +61,6 @@ export const SITE_CONFIG = {
     ],
     articleCopyright: {
         enabled: true,
-        declaration: "No part of this article may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author."
+        //declaration: "No part of this article may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author."
     }
 };
